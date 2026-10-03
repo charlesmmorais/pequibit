@@ -63,3 +63,7 @@ Os exemplos usam somente recursos locais. Não há conversor geral de formatos, 
 - [Projeto final](projeto-final.md)
 - [Fontes e dúvidas](referencias.md)
 - [Código dos experimentos](experimentos.py)
+
+## Primeiro teste na IBM
+
+[Guia: criar conta, entender o Open Plan e executar Bell](../../guias/ibm-quantum-primeiro-teste.md). Inclui ensaio local e envio explícito a uma QPU. Nenhuma execução física foi realizada pelo projeto durante a elaboração do guia.

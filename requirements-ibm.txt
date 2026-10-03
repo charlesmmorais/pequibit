@@ -1,0 +1,3 @@
+# Ambiente separado da trilha introdutória Qiskit 2.2.3.
+qiskit==2.5.2
+qiskit-ibm-runtime==0.47.0

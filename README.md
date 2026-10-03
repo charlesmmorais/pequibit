@@ -91,3 +91,7 @@ Dois qubits, inicialização, H, X, Z, CNOT e leitura de amplitudes por serial. 
 Uma pergunta bem escrita também é uma contribuição. Você pode revisar uma explicação, reproduzir um experimento, melhorar um teste ou implementar um módulo. Veja [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Fontes e leituras: [referências](docs/07-referencias.md). Preparação da publicação e proposta de licenciamento: [publicação](docs/08-publicacao.md).
+
+## Primeiro teste na IBM
+
+[Guia: criar conta, entender o Open Plan e executar Bell](guias/ibm-quantum-primeiro-teste.md). Inclui ensaio local e envio explícito a uma QPU. Nenhuma execução física foi realizada pelo projeto durante a elaboração do guia.

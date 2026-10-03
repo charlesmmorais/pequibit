@@ -4,3 +4,5 @@ __pycache__/
 build/
 *.vcd
 .venv-qiskit/
+.venv-ibm/
+resultados-ibm/
