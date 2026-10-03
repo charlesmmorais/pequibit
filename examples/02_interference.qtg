@@ -1,0 +1,4 @@
+# Duas Hadamards restauram o estado inicial
+INIT 1
+H 0
+H 0

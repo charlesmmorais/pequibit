@@ -1,0 +1,4 @@
+# Estado conjunto: (|00> + |11>)/sqrt(2)
+INIT 2
+H 0
+CNOT 0 1
