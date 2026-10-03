@@ -53,6 +53,34 @@ class StateVector:
                 self.amplitudes[first], self.amplitudes[second] = (
                     self.amplitudes[second], self.amplitudes[first])
 
+    def collapse(self, target, outcome):
+        """Seleciona uma ramificação para análise; retorna sua probabilidade.
+
+        Isto é pós-seleção matemática, não controle físico de um resultado.
+        Um resultado impossível é rejeitado antes de alterar o vetor.
+        """
+        self.check_qubit(target)
+        if outcome not in (0, 1):
+            raise ValueError('O resultado deve ser 0 ou 1.')
+        probability = sum(abs(a) ** 2 for index, a in enumerate(self.amplitudes)
+                          if ((index >> target) & 1) == outcome)
+        if probability <= 0:
+            raise ValueError('Não é possível selecionar uma ramificação de probabilidade zero.')
+        divisor = math.sqrt(probability)
+        self.amplitudes = [a / divisor if ((index >> target) & 1) == outcome else 0j
+                           for index, a in enumerate(self.amplitudes)]
+        return probability
+
+    def measure(self, target, rng=None):
+        """Mede um qubit na base computacional e colapsa o estado conjunto."""
+        self.check_qubit(target)
+        rng = rng if rng is not None else random.Random()
+        weights = [sum(abs(a) ** 2 for index, a in enumerate(self.amplitudes)
+                       if ((index >> target) & 1) == bit) for bit in (0, 1)]
+        outcome = rng.choices((0, 1), weights=weights, k=1)[0]
+        self.collapse(target, outcome)
+        return outcome
+
     def probabilities(self):
         return [abs(amplitude) ** 2 for amplitude in self.amplitudes]
 

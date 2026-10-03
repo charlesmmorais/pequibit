@@ -29,6 +29,6 @@ Um vetor de estado de n qubits contém 2^n amplitudes. Dobrar o número de qubit
 
 ## Medir e olhar a memória são coisas diferentes
 
-No modelo, podemos listar todas as amplitudes para depuração. Isso não representa uma medição possível de um único sistema quântico real. O comando de amostragem do software também não altera o vetor: ele representa medições de várias preparações idênticas. Medição intermediária com colapso será uma funcionalidade separada.
+No modelo, podemos listar todas as amplitudes para depuração. Isso não representa uma medição possível de um único sistema quântico real. O comando de amostragem do software também não altera o vetor: ele representa medições de várias preparações idênticas. Medição intermediária com colapso é oferecida separadamente pela API Python `measure`; veja o [módulo 5](../curso/modulos/05-medicao.md).
 
 Referência conceitual: IBM Quantum Learning, nas [fontes](07-referencias.md).

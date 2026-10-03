@@ -17,3 +17,7 @@ Linhas vazias e comentários iniciados por `#` são aceitos. Os operandos são i
 A saída do programa lista estados com probabilidade maior que 10⁻¹² e depois amostra 1.000 resultados com semente fixa. Isso é amostragem de preparações repetidas, sem colapso do vetor entre amostras. Não existe instrução MEASURE nesta versão.
 
 O hardware inicial implementará apenas o subconjunto INIT, H, X, Z e CNOT. S e T no modelo preparam a futura exploração de fases complexas.
+
+## Medição pela API Python
+
+A linguagem QTG permanece sem instruções de medição. A API `StateVector.measure(target, rng)` sorteia e colapsa; `collapse(target, outcome)` faz pós-seleção matemática. Os experimentos do [curso](../curso/README.md) usam essa API e correções condicionais em Python.

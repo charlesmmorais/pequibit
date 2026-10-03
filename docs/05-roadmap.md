@@ -12,6 +12,10 @@ Não há datas artificiais. Uma etapa termina quando sua evidência existe.
 | M5 — Medir e decidir | Amostragem, colapso e controle clássico | Teletransporte passa em todas as ramificações | Planejado |
 | M6 — Laboratório ampliado | Fases, Grover e interface de observação | Aulas reproduzíveis e limites medidos | Planejado |
 
+## Curso implementado no modelo Python
+
+Oito módulos, medição com colapso, Grover e teletransporte já estão disponíveis no [curso](../curso/README.md). M5 e M6 acima se referem à evolução do executor em FPGA. O exemplo de quantização do curso é ilustrativo e não conclui M1.
+
 ## Primeiras tarefas para issues
 
 1. Definir arredondamento e elaborar exemplos de fronteira do formato inteiro.

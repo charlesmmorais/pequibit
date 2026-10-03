@@ -28,14 +28,16 @@ Execute `python3 software/reference.py examples/04_phase.qtg`.
 
 O circuito H–Z–H equivale a X. Esperado: resultado 1. Compare com H–H. A fase introduzida por Z passa a afetar probabilidades após a última H.
 
-## 5. Grover de dois qubits — planejado
+## 5. Grover de dois qubits — implementado no modelo
 
 Objetivo: marcar 11 e amplificar sua probabilidade com uma iteração. Implementar CZ por H no alvo, CNOT, H no alvo. Conferir a distribuição final e explicar por que o oráculo contém uma regra de reconhecimento. Esta atividade não demonstra uma vantagem prática de busca em uma lista de quatro elementos.
 
-## 6. Teletransporte — planejado
+## 6. Teletransporte — implementado no modelo
 
 Objetivo: transferir um estado simulado de q0 para q2 com três qubits e dois bits clássicos. Preparar estados de teste que incluam fases complexas. Verificar as quatro ramificações das medições, as correções e a fidelidade final. O estado original não permanece como uma cópia utilizável. Nenhuma matéria ou mensagem superluminal é transferida.
 
 ## Do computador à placa
 
 Repetir os primeiros quatro laboratórios com o futuro executor FPGA. Registrar circuito, revisão da placa, versão do compilador, commit, clock, amplitudes e erro em relação ao modelo. A experiência só muda de status após essa evidência.
+
+Execução e explicações: [Grover](../curso/modulos/06-grover.md) e [teletransporte](../curso/modulos/07-teletransporte.md). Ambos funcionam no computador; implementação FPGA ainda planejada.

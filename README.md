@@ -10,7 +10,18 @@ O nome aproxima **pequeno** e **qubit**: aprender começando por circuitos que c
 
 ## Onde estamos
 
-**Versão inicial: base educativa e modelo de referência em Python.** Os exemplos locais e os testes estão implementados. O núcleo em FPGA, a comunicação serial e o bitstream ainda serão desenvolvidos. Não há medição de desempenho nem validação física da placa nesta versão.
+**Versão inicial: base educativa e modelo de referência em Python.** Os exemplos locais, os oito módulos do curso e os testes estão implementados. O núcleo em FPGA, a comunicação serial e o bitstream ainda serão desenvolvidos. Não há medição de desempenho nem validação física da placa nesta versão.
+
+## Aprenda com o curso
+
+**[Pequibit — Do primeiro qubit ao circuito](curso/README.md)**: oito módulos, experimentos executáveis, desafios com soluções e projeto final. Comece sem placa e avance até a introdução ao hardware.
+
+```bash
+python3 -m curso.experimentos grover
+python3 -m curso.experimentos teletransporte
+```
+
+O curso inclui medição com colapso e teletransporte no modelo Python. A implementação dessas operações em FPGA continua planejada.
 
 ## O que estamos construindo
 
@@ -59,6 +70,7 @@ Partimos de |00⟩, criamos uma superposição e correlacionamos os qubits. O re
 | Caminho | Responsabilidade |
 |---|---|
 | `software/reference.py` | Modelo matemático executável |
+| `curso/` | Oito módulos e experimentos de medição, Grover, teletransporte e quantização |
 | `examples/` | Circuitos pequenos em texto |
 | `tests/` | Verificações de comportamento |
 | `hardware/rtl/` | Futuro núcleo SystemVerilog |
