@@ -41,7 +41,7 @@ Todos os comandos do curso partem da raiz `pequibit`, que contém `software`, `c
 
 Leia a pergunta, escreva uma previsão e só então execute. Mude uma coisa de cada vez. Registre o que esperava, o que observou e como explicaria a diferença a outra pessoa. Abra as soluções depois de tentar os desafios.
 
-O curso simula circuitos ideais em um computador clássico. Os módulos 1–7 funcionam em software; o módulo 8 oferece uma ponte prática para engenharia digital. Não há RTL ou execução física na FPGA nesta versão.
+O curso simula circuitos ideais em um computador clássico. Os módulos 1–7 funcionam em software; o módulo 8 oferece uma ponte prática para engenharia digital. Já existe um [núcleo RTL simulado](../hardware/README.md), ainda sem execução física na placa.
 
 ## Materiais de apoio
 

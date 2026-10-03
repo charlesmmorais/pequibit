@@ -5,8 +5,8 @@ Não há datas artificiais. Uma etapa termina quando sua evidência existe.
 | Marco | Entrega | Critério de conclusão | Estado |
 |---|---|---|---|
 | M0 — Começar a explorar | Documentação, modelo Python e quatro circuitos | Exemplos executam e testes passam | Implementado nesta base |
-| M1 — Números que cabem | Modelo inteiro com escala 16384 | Arredondamento, overflow e erro caracterizados | Planejado |
-| M2 — Primeiro núcleo | RTL de dois qubits, H/X/Z/CNOT | Simulação RTL comparada ao modelo inteiro | Planejado |
+| M1 — Números que cabem | Modelo inteiro com escala 16384 | Contrato e testes de fronteira | Implementado para duas amplitudes por butterfly; deriva longa ainda a caracterizar |
+| M2 — Primeiro núcleo | RTL de dois qubits, H/X/Z/CNOT | Simulação RTL comparada ao modelo inteiro | Implementado; 812 comandos conferidos |
 | M3 — Primeiro resultado físico | UART, top e constraints | Bell e H–H reproduzidos na Tang Nano 20K | Planejado |
 | M4 — Oito qubits | Memória e controle parametrizados | Síntese, timing e testes de todos os alvos aprovados | Planejado |
 | M5 — Medir e decidir | Amostragem, colapso e controle clássico | Teletransporte passa em todas as ramificações | Planejado |
@@ -28,3 +28,5 @@ Oito módulos, medição com colapso, Grover e teletransporte já estão dispon�
 8. Registrar primeira execução física com amplitudes e erro numérico.
 
 As tarefas 1–5 antecedem promessas de frequência ou capacidade. HDMI, interface web, SDRAM e integração com Qiskit ficam como expansões, não pré-requisitos do primeiro sucesso.
+
+A [documentação do hardware](../hardware/README.md) registra a implementação atual. A lista inicial de issues abaixo dos marcos é um roteiro histórico: modelo inteiro, butterfly, núcleo e testbench já foram entregues. A próxima frente é M3.

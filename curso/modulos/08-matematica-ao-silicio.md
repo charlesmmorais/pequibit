@@ -14,7 +14,7 @@ Execute `python3 -m curso.experimentos ponto-fixo`.
 
 A demonstração quantiza o coeficiente de H e arredonda os resultados. Ela imprime as amplitudes e a norma ao quadrado após 1, 2 e 100 aplicações. Compare o retorno esperado a |0⟩ depois de duas H com o valor aproximado obtido.
 
-Esta função usa inteiros Python sem limite de largura, divisão em ponto flutuante e `round` com empate para o par. Não é ainda o modelo bit a bit do RTL: serve para tornar a quantização visível. Overflow, larguras intermediárias e regras de arredondamento do hardware precisam ser especificados separadamente.
+Esta função usa inteiros Python sem limite de largura, divisão em ponto flutuante e `round` com empate para o par. Não é o modelo bit a bit do RTL: serve para tornar a quantização visível. Overflow, larguras intermediárias e regras de arredondamento do hardware precisam ser especificados separadamente.
 
 ## Desenhe seu primeiro bloco
 
@@ -42,3 +42,5 @@ Escreva a interface no papel: entradas, saídas, sinal de início, sinal de tér
 ---
 
 [← Módulo anterior](07-teletransporte.md) · [Índice](../README.md) · [Projeto final →](../projeto-final.md)
+
+Para avançar além da demonstração, veja o [núcleo implementado e seu modelo inteiro](../../hardware/README.md).

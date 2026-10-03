@@ -1,3 +1,5 @@
-# Núcleo RTL — planejado
+# RTL do Pequibit
 
-Esta pasta receberá os módulos descritos em [arquitetura](../../docs/02-arquitetura.md). Não há HDL ou bitstream nesta base. O primeiro passo é concluir o modelo de ponto fixo e definir as interfaces síncronas.
+Dois qubits, H/X/Z/CNOT, LOAD para depuração, aritmética de ponto fixo e rejeição atômica de erros. Consulte [interface, instruções e como simular](../README.md).
+
+Este diretório contém um núcleo independente da placa. Não há top Tang Nano, constraints, UART ou bitstream nesta versão.

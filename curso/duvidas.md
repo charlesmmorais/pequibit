@@ -12,7 +12,7 @@
 
 **A medição sempre dá o mesmo resultado.** Uma semente fixa repete uma execução. Medir novamente um estado já colapsado sem uma nova porta também repete o resultado. Para novos ensaios, prepare o circuito novamente e reutilize um gerador que avance sua sequência.
 
-**Posso gravar isso na Tang Nano agora?** Ainda não. O curso usa um modelo executável; o RTL e a integração da placa seguem o roadmap.
+**Posso gravar isso na Tang Nano agora?** Ainda não. O curso usa um modelo executável; o núcleo RTL está simulado, mas a integração da placa segue pendente no roadmap.
 
 **O comando MEASURE não funciona no QTG.** Nesta versão, medição está disponível na API Python como `measure`, não no parser QTG.
 

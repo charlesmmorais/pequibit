@@ -10,7 +10,7 @@ O nome aproxima **pequeno** e **qubit**: aprender começando por circuitos que c
 
 ## Onde estamos
 
-**Versão inicial: base educativa e modelo de referência em Python.** Os exemplos locais, os oito módulos do curso e os testes estão implementados. O núcleo em FPGA, a comunicação serial e o bitstream ainda serão desenvolvidos. Não há medição de desempenho nem validação física da placa nesta versão.
+**Estado atual: cursos, simuladores Python e primeiro núcleo RTL de dois qubits.** Os exemplos locais, os oito módulos do curso e os testes estão implementados. O núcleo RTL de dois qubits já foi simulado e passou por síntese genérica. A comunicação serial, integração Gowin e o bitstream ainda serão desenvolvidos. Não há validação física da placa nesta versão.
 
 ## Aprenda com o curso
 
@@ -77,7 +77,7 @@ Partimos de |00⟩, criamos uma superposição e correlacionamos os qubits. O re
 | `curso/` | Oito módulos e experimentos de medição, Grover, teletransporte e quantização |
 | `examples/` | Circuitos pequenos em texto |
 | `tests/` | Verificações de comportamento |
-| `hardware/rtl/` | Futuro núcleo SystemVerilog |
+| `hardware/rtl/` | Núcleo SystemVerilog de dois qubits, validado em simulação |
 | `hardware/boards/tang-nano-20k/` | Futura integração específica da placa |
 | `docs/` | Ciência, decisões, aulas e critérios de aceitação |
 | `.github/workflows/tests.yml` | Testes automáticos do modelo Python |
@@ -95,3 +95,7 @@ Fontes e leituras: [referências](docs/07-referencias.md). Preparação da publi
 ## Primeiro teste na IBM
 
 [Guia: criar conta, entender o Open Plan e executar Bell](guias/ibm-quantum-primeiro-teste.md). Inclui ensaio local e envio explícito a uma QPU. Nenhuma execução física foi realizada pelo projeto durante a elaboração do guia.
+
+## Núcleo FPGA: primeira implementação
+
+[Como simular e entender o hardware](hardware/README.md). H, X, Z e CNOT já possuem RTL com comparação bit a bit; a integração física da Tang Nano 20K é o próximo marco.

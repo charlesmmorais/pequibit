@@ -1,6 +1,6 @@
 # Arquitetura proposta
 
-**Estado: projeto de engenharia, ainda sem RTL implementado.**
+**Estado: arquitetura de evolução. O [primeiro núcleo RTL](../hardware/README.md) de dois qubits já foi implementado e simulado; integração da placa pendente.**
 
 ## Uma decisão para aprender melhor
 
@@ -37,7 +37,7 @@ Proposta inicial: cada componente é um inteiro com sinal de 16 bits, interpreta
 
 Uma amplitude ocupa 32 bits: 16 reais e 16 imaginários. H exige somas em largura ampliada e multiplicação pela aproximação de 1/√2. A regra de arredondamento deverá ser única e documentada; overflow deve gerar indicação de erro, não wrap silencioso. Não usaremos renormalização automática para esconder deriva numérica.
 
-O modelo Python inicial usa ponto flutuante complexo e não reproduz ainda o arredondamento da FPGA. Antes do RTL, criar um modelo de ponto fixo que reproduza cada operação bit a bit.
+O modelo ideal usa ponto flutuante. O modelo adicional `software/fixed_reference.py` implementa o contrato inteiro do núcleo: arredondamento ao mais próximo com empates afastados de zero e rejeição atômica em caso de overflow. Consulte a documentação de hardware para a interface implementada.
 
 ## Memória estimada
 
