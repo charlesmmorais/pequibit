@@ -23,6 +23,10 @@ python3 -m curso.experimentos teletransporte
 
 O curso inclui medição com colapso e teletransporte no modelo Python. A implementação dessas operações em FPGA continua planejada.
 
+## Trilha opcional: Qiskit
+
+**[Pequibit com Qiskit — Da descoberta à programação](trilhas/qiskit/README.md)**: seis aulas, instalação isolada, comparação independente de estados e introdução à transpilação. O curso básico continua sem dependências externas.
+
 ## O que estamos construindo
 
 Um simulador clássico de circuitos quânticos, com um futuro executor em hardware reconfigurável. Ele guarda amplitudes complexas e aplica as mesmas transformações matemáticas usadas para descrever circuitos ideais.

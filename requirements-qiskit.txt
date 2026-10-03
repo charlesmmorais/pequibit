@@ -1,0 +1,2 @@
+# Versão de referência do curso; dependência opcional.
+qiskit==2.2.3

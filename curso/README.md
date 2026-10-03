@@ -61,3 +61,7 @@ python3 -m curso.experimentos ponto-fixo
 ```
 
 A API Python oferece medição e pós-seleção. O formato QTG continua restrito a INIT e portas; não tente inserir MEASURE no arquivo de circuito.
+
+## Continue com Qiskit
+
+Depois dos fundamentos, explore a [trilha opcional de Qiskit](../trilhas/qiskit/README.md), com seis aulas e comparação entre os simuladores.
